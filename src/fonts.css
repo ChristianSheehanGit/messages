@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "RionaSansBlack";
+  src: url("RionaSansBlack.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "RionaSansMedium";
+  src: url("RionaSansMedium.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "SometypeMono";
+  src: url("SometypeMono.ttf") format("truetype");
+  font-weight: normal;
+}
+
+body {
+  font-family: "SometypeMono", sans-serif;
+  color: white;
+}
+
+/* Global scrollbar styling */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px; /* for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track {
+  background: #242424; /* crollbar track (background) */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #606060; /* scrollbar handle */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4d4d4d; /* darker on hover */
+}
+
+.vote-btn {
+  cursor: pointer;
+  color: white;
+}
+
+.postbuttons {
+  display: flex;
+  margin: 0;
+}
+
+.vote-btn:hover {
+  opacity: 0.7; /* darkens by reducing brightness */
+}
+
+.pollchoice {
+  cursor: pointer;
+  color: white;
+}
+
+.pollchoice:hover {
+  opacity: 0.7; /* darkens by reducing brightness */
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: center; /* centers input horizontally */
+}
+
+.rhap_container {
+  --rhap_main-color: #ffffff;       /* Play/pause icon color */
+  --rhap_progress-filled-color: #ffffff; /* Filled part of progress bar */
+  --rhap_progress-buffered-color: #505050;  /* Buffered part of progress bar */
+  --rhap_progress-background-color: #333; /* Unfilled part */
+  --rhap_volume-slider-color: #F2F0EF; /* Volume slider */
+  --rhap_main-color: #ffffff;
+}
+.rhap_time {
+  color: #F2F0EF;
+}
+
+.post-input {
+  width: 400px; /* or whatever you want */
+}
+
+#xmark:hover {
+  opacity: 0.7;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* left-align posts */
+}
